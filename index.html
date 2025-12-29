@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebogang Solutions</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-zP3zHfHBq8NnE4C/Gd+M6ixq2eYcT6m+afV8aIoT3m2O3j4fVvKPr2eTcJ+u7BZV7p3rB8s0fS3k5lD2B6KxFw=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    
+<!--<link href="css/styles2.css" rel="stylesheet">-->
+    <link href="css/style.css" rel="stylesheet">
+
+  
+    
+</head>
+<body>
+
+<!-- NAV -->
+<!-- NAVIGATION -->
+<nav class="navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+        <!-- Brand -->
+        <h1 class="navbar-brand mb-0" style="color:#1B5C98;">Lebogang Solutions</h1>
+        
+        <!-- Navigation Links -->
+        <div class="nav-links d-none d-md-flex">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#values">Values</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <!-- Hamburger for mobile -->
+        <div class="hamburger d-md-none">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+
+</style>
+
+<!-- Optional JS for mobile toggle -->
+<script>
+const hamburger = document.querySelector('.hamburger');
+let mobileMenu;
+
+hamburger.addEventListener('click', () => {
+    if(!mobileMenu) {
+        mobileMenu = document.createElement('div');
+        mobileMenu.classList.add('mobile-menu');
+        mobileMenu.innerHTML = `
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#values">Values</a>
+            <a href="#contact">Contact</a>
+        `;
+        document.body.appendChild(mobileMenu);
+    } else {
+        mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+    }
+});
+</script>
+
+
+<!-- HERO -->
+<header>
+
+    <div id="heroCarousel"
+         class="carousel slide carousel-fade"
+         data-bs-ride="carousel"
+         data-bs-interval="4000">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="images/slide1111.jpg" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption">
+                    <!--<h2>Advancing the Body of Christ</h2>
+                    <p>Financial, social & material empowerment</p>-->
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/slide222.jpg" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption">
+                    <!--<h2>Global Kingdom Impact</h2>
+                    <p>Ensuring no one is left behind</p>-->
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/slide33.jpg" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption">
+                    <!--<h2>Faith. Integrity. Excellence.</h2>
+                    <p>Serving God worldwide</p>-->
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+</header>
+
+
+<div class="container-fluid head_forms">
+    <!-- Spinner 1 -->
+    <script src="./js/spinners.js"></script>
+    <script>
+        const spinner1 = createSpinnerInline();       
+    </script>  
+</div> 
+
+<!-- ABOUT -->
+<section id="about" class="about py-5" style="background-color:#f7f9fc;">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            
+            <!-- Image -->
+            <div class="col-md-6">
+                <img src="images/about_us.jpg" alt="About Lebogang Solutions" class="img-fluid rounded shadow-lg">
+            </div>
+
+            <!-- Text Content -->
+            <div class="col-md-6">
+                <div class="p-4 rounded" style="background-color:#ffffff; box-shadow: 0 8px 20px rgba(0,0,0,0.05);">
+                    <h3 class="fw-bold mb-4" style="color:#1B5C98;">About Us</h3>
+                    
+                    <p><strong>Lebogang Solutions:</strong> is a private company dedicated to advancing the works of the Body of Christ globally. We strive to establish financial structures that support ministries, churches, and believers, ensuring dignity, sustainability, and lasting impact across nations.</p>
+
+                    <p><strong>Our Mission:</strong> To empower the Body of Christ through innovative financial solutions, social support, and advisory services that foster growth, responsible stewardship, and global impact.</p>
+
+                    <p><strong>Our Vision:</strong> To be a trusted partner for the Body of Christ worldwide, building sustainable financial and social frameworks that strengthen ministries, uplift communities, and expand the reach of God’s work across all nations.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="container-fluid head_forms">
+    <!-- Spinner 1 -->
+    <script src="./js/spinners.js"></script>
+    <script>
+        const spinner2 = createSpinnerInline();       
+    </script>  
+</div> 
+<section class="about-bank py-5" style="background-color:#f7f9fc;">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            
+            <!-- Image -->
+            <div class="col-lg-5">
+                <img src="images/bank2.jpg" class="rounded shadow-lg w-100" alt="Global Christian Bank">
+            </div>
+            
+            <!-- Content -->
+            <div class="col-lg-7">
+                <div class="p-4 rounded" style="background: linear-gradient(135deg, #FFF9C4, #F1F0FF);">
+                    <h3 class="display-6 mb-3" style="color:#1B5C98;">Global Christian Bank</h3>
+                    
+                    <div class="section mb-4">
+                        <p><strong>Global Christian Bank</strong> exists to serve people, especially the Body of Christ, with integrity, compassion, and purpose. Inspired by Acts 4:34, we believe financial systems should uplift communities and ensure that no one is left behind.</p>
+                        <p>We are committed to ethical stewardship, managing resources with transparency and accountability. Our approach goes beyond profit, focusing on shared prosperity by creating fair access to financial opportunities for individuals, families, and ministries.</p>
+                        <p>Through responsible banking, community investment, and values-driven leadership, Global Christian Bank seeks to promote dignity, growth, and long-term impact—building a financial future rooted in trust, service, and faith.</p>
+                    </div>
+
+                    <!-- Values -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center value-badge">
+                                <i class="fa fa-certificate text-primary me-2"></i>
+                                <span>We serve people, not profit alone</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center value-badge">
+                                <i class="fa fa-certificate text-primary me-2"></i>
+                                <span>We practice ethical stewardship</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center value-badge">
+                                <i class="fa fa-certificate text-primary me-2"></i>
+                                <span>We promote shared prosperity</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center value-badge">
+                                <i class="fa fa-certificate text-primary me-2"></i>
+                                <span>We invest in dignity and growth</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary py-2 px-5 rounded-pill shadow-sm">
+                        About Us <i class="fas fa-arrow-right ps-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                        
+                    
+<div class="container-fluid head_forms">
+    <!-- Spinner 1 -->
+    <script src="./js/spinners.js"></script>
+    <script>
+        const spinner3 = createSpinnerInline();       
+    </script>  
+</div> 
+
+
+
+<!-- Service Start -->
+<!-- Kingdom Initiatives Section -->
+<section class="kingdom-initiatives py-5" style="background-color:#f7f9fc;">
+    <div class="container">
+        <!-- Section Heading -->
+        <div class="text-center mb-5">
+            <h2 class="fw-bold" style="color:#1B5C98;">Kingdom Initiatives</h2>
+            <p class="text-muted" style="font-size:1.1rem;">
+           These initiatives are but a glimpse of the vision God has placed in our
+            hearts—a Kingdom mandate to influence every sphere of society with righteousness,
+             compassion, and stewardship, until communities are restored, lives are transformed,
+              and nations reflect the glory of God.
+            </p>
+        </div>
+
+        <!-- Cards Row -->
+        <div class="row g-4">
+
+            <!-- 1. Justice & Righteousness -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 text-center p-3">
+                    <i class="fas fa-gavel fa-3x mb-3"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Justice & Righteousness</h5>
+                        <p class="card-text">
+                            Upholding biblical justice, defending the oppressed, and restoring dignity according to God’s Word.
+                        </p>
+                        <p class="small text-muted">
+                            “Learn to do right; seek justice. Defend the oppressed. Take up the cause of the fatherless; plead the case of the widow.”<br>
+                            <strong>Isaiah 1:17</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Kingdom Education -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 text-center p-3">
+                    <i class="fas fa-book-open fa-3x mb-3"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Kingdom Education</h5>
+                        <p class="card-text">
+                            Building and supporting schools, colleges, and universities grounded in Christian values, wisdom, and truth.
+                        </p>
+                        <p class="small text-muted">
+                            “Train up a child in the way he should go, and when he is old he will not depart from it.”<br>
+                            <strong>Proverbs 22:6</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Biblical Financial Stewardship -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 text-center p-3">
+                    <i class="fas fa-coins fa-3x mb-3"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Biblical Financial Stewardship</h5>
+                        <p class="card-text">
+                            Establishing banks and financial systems that reflect integrity, stewardship, and Kingdom principles.
+                        </p>
+                        <p class="small text-muted">
+                            “Moreover it is required in stewards that one be found faithful.”<br>
+                            <strong>1 Corinthians 4:2</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Healing & Compassion Ministry -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 text-center p-3">
+                    <i class="fas fa-hand-holding-medical fa-3x mb-3"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Healing & Compassion Ministry</h5>
+                        <p class="card-text">
+                            Building hospitals, clinics, and wellness centers to minister healing, care, and compassion in Christ’s name.
+                        </p>
+                        <p class="small text-muted">
+                            “He sent His word and healed them, and delivered them from their destructions.”<br>
+                            <strong>Psalm 107:20</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Kingdom Infrastructure & Housing -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 text-center p-3">
+                    <i class="fas fa-home fa-3x mb-3"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Kingdom Infrastructure & Housing</h5>
+                        <p class="card-text">
+                            Developing homes and facilities that provide safety, stability, and dignity for God’s people.
+                        </p>
+                        <p class="small text-muted">
+                            “They shall build houses and inhabit them; they shall plant vineyards and eat their fruit.”<br>
+                            <strong>Isaiah 65:21</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Care for the Poor & Vulnerable -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 text-center p-3">
+                    <i class="fas fa-hands-helping fa-3x mb-3"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Care for the Poor & Vulnerable</h5>
+                        <p class="card-text">
+                            Serving widows, orphans, the elderly, and persons with disabilities as an expression of Christ’s love.
+                        </p>
+                        <p class="small text-muted">
+                            “Religion that God our Father accepts as pure and faultless is this: to look after orphans and widows in their distress.”<br>
+                            <strong>James 1:27</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Work, Skills & Provision -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 text-center p-3">
+                    <i class="fas fa-briefcase fa-3x mb-3"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Work, Skills & Provision</h5>
+                        <p class="card-text">
+                            Equipping believers with skills, employment, and entrepreneurial opportunities to walk in God-given purpose.
+                        </p>
+                        <p class="small text-muted">
+                            “The Lord will bless the work of your hands.”<br>
+                            <strong>Deuteronomy 28:12</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Church & Ministry Empowerment -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 text-center p-3">
+                    <i class="fas fa-church fa-3x mb-3"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Church & Ministry Empowerment</h5>
+                        <p class="card-text">
+                            Strengthening churches and ministries with resources, governance support, and sustainability structures.
+                        </p>
+                        <p class="small text-muted">
+                            “So then, just as you received Christ Jesus as Lord, continue to live your lives in Him, rooted and built up in Him.”<br>
+                            <strong>Colossians 2:6–7</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CSS for hover effects and icons -->
+
+
+
+
+
+<!-- VALUES -->
+<section id="values" class="py-5" style="background-color: #f7f9fc;">
+    <div class="container text-center">
+        <h3 class="fw-bold mb-4" style="color:#1B5C98;">Our Values</h3>
+        <div class="row g-4 justify-content-center">
+
+            <!-- Value 1: Faith-Driven -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card value-card h-100 p-4 text-center">
+                    <i class="fas fa-praying-hands fa-3x mb-3"></i>
+                    <h5 class="card-title">Faith-Driven</h5>
+                    <p class="card-text">Rooted in Christ, all our actions and decisions reflect unwavering faith and trust in God’s guidance.</p>
+                </div>
+            </div>
+
+            <!-- Value 2: Integrity -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card value-card h-100 p-4 text-center">
+                    <i class="fas fa-balance-scale fa-3x mb-3"></i>
+                    <h5 class="card-title">Integrity</h5>
+                    <p class="card-text">We act with honesty, transparency, and consistency in all we do, reflecting Godly character.</p>
+                </div>
+            </div>
+
+            <!-- Value 3: Compassion -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card value-card h-100 p-4 text-center">
+                    <i class="fas fa-heart fa-3x mb-3"></i>
+                    <h5 class="card-title">Compassion</h5>
+                    <p class="card-text">Caring for the vulnerable and underserved, demonstrating Christ’s love in every action.</p>
+                </div>
+            </div>
+
+            <!-- Value 4: Excellence -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card value-card h-100 p-4 text-center">
+                    <i class="fas fa-star fa-3x mb-3"></i>
+                    <h5 class="card-title">Excellence</h5>
+                    <p class="card-text">Striving for the highest quality in all our initiatives to honor God and serve people effectively.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!----------letter------->
+<!-- LETTER TO THE BODY OF CHRIST -->
+<section id="letter" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-3">Letter to the Body of Christ</h2>
+    <p class="text-center fst-italic mb-5 fade-in">“Let us bear one another’s burdens.” — Galatians 6:2</p>
+
+    <div class="letter-content fade-in">
+      <p>Grace and peace to you in the name of our Lord and Savior Jesus Christ.</p>
+
+      <p>In every generation, the Church has stood as the hands and feet of Jesus — reaching out to lift those who stumble, to comfort the weary, and to restore dignity to those who suffer. Today, many of our brothers and sisters within the Body of Christ face hardships — social, financial, emotional, and spiritual.</p>
+
+      <p>We are reminded of the timeless call of Scripture: <strong>“Bear one another’s burdens, and so fulfill the law of Christ.” — Galatians 6:2</strong></p>
+
+      <h5 class="mt-4">Our Relief & Empowerment Fund</h5>
+      <p>We are launching a Body of Christ Relief and Empowerment Fund, with a goal to raise a minimum of one billion rands. These funds will prayerfully support initiatives that will:</p>
+      <ul>
+        <li>Provide immediate financial aid to struggling families;</li>
+        <li>Offer counseling, mentorship, and spiritual support to the discouraged;</li>
+        <li>Establish long-term community projects that create jobs and economic opportunities;</li>
+        <li>Empower believers to fulfill their God-given callings and walk in the fullness of God’s purpose.</li>
+      </ul>
+
+      <p>Inspired by the Macedonian believers in 2 Corinthians 8:2–3, who “in the midst of their severe trial, their overflowing joy and their extreme poverty welled up in rich generosity,” we give with love. Every gift is a seed of compassion, a testimony of unity, and an act of worship before God. <strong>“Whatever you did for one of the least of these brothers and sisters of mine, you did for Me.” — Matthew 25:40</strong></p>
+
+      <!-- Donation Info -->
+      <div class="donation-info mt-4 p-4 rounded bg-white shadow-sm fade-in">
+        <h5 class="mb-3">How to Donate</h5>
+        <p>Please support the Body of Christ Relief and Empowerment Fund. Your gift will bring hope, assistance, and empowerment to those in need.</p>
+        <ul>
+          <li><strong>Bank:</strong> Capitec</li>
+          <li><strong>Branch Name:</strong> Relationship Suite</li>
+          <li><strong>Branch Code:</strong> 450 105</li>
+          <li><strong>Account Name:</strong> LEBOGANG SOLUTIONS PTY(LTD)</li>
+          <li><strong>Account Number:</strong> 1053698402</li>
+          <li><strong>Reference:</strong> LEBOGANG SOLUTIONS PTY(LTD)</li>
+        </ul>
+         <div class="text-center mt-3">
+          <a href="#donate" class="btn btn-primary btn-lg rounded-pill">
+            Donate Now <i class="fas fa-hand-holding-heart ps-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <p class="mt-4">“Therefore, as we have opportunity, let us do good to all people, especially to those who belong to the household of faith.” — Galatians 6:10</p>
+
+      <p class="mt-4">
+        With heartfelt gratitude and in Christ’s enduring love,<br>
+        Lebogang Nong<br>
+        LEBOGANG SOLUTIONS PTY(LTD)<br>
+        +27 67 218 9519
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Fade-in animation CSS (add to your style.css) -->
+
+
+<!-- JavaScript to trigger fade-in on scroll (before </body>) -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOnScroll = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.2 });
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+});
+</script>
+
+
+
+
+<!--------contact section-->
+<section id="contact-info" class="py-5 bg-light">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- Address -->
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <i class="fas fa-location-dot fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Our Address</h5>
+                        <p class="card-text">
+                            123 Kingdom Way<br>
+                            Johannesburg, South Africa
+                            453 REVEREND RTJ NAMANE DRIVE
+                        <p class="card-text">42 TEMONG, TEMBISA, MIDRAND, GAUTENG, 1632</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+                        <h5 class="card-title">Contact Us</h5>
+                        <p class="card-text">
+                            +27 672 189 519<br>
+                            Mon – Fri | 9am – 5pm
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                        <h5 class="card-title">Email</h5>
+                        <p class="card-text">
+                            info@lebogangsolutions.org<br>
+                            support@lebogangsolutions.org
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Donations -->
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <i class="fas fa-hand-holding-heart fa-2x text-primary mb-3"></i>
+                        <h5 class="card-title">Donations</h5>
+                        <p class="card-text">
+                            Support Kingdom initiatives<br>
+                            & community impact
+                        </p>
+                        <a href="#" class="btn btn-primary btn-sm rounded-pill">
+                            Give Now <i class="fas fa-arrow-right ps-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Faith Statement -->
+        <div class="text-center mt-5">
+            <p class="fw-semibold text-muted">
+                “Freely you have received; freely give.” — Matthew 10:8
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer py-4" style="background-color:#1B5C98; color:#fff; text-align:center;">
+    &copy; 2025 Lebogang Solutions. All Rights Reserved.
+</footer>
+
+<!-- CSS -->
+
+
+
+
+
+<!-- IMPORTANT: load JS at the bottom 
+<script src="js/slider.js"></script>-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/spinners.js"></script>
+
+
+</body>
+</html>
