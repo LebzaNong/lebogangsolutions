@@ -37,3 +37,61 @@ document.addEventListener('DOMContentLoaded', () => {
         appearOnScroll.observe(fader);
     });
 });
+
+/************auto reply**emailjs**/
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  emailjs.init("PwQDrb5Rrkf4pgc00"); // Public Key
+
+  const form = document.getElementById("contactForm");
+
+  
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // 🤖 Honeypot check
+  const honeypot = document.getElementById("website").value;
+  if (honeypot !== "") {
+    return; // bot detected – stop here
+  }
+    const userEmail = document.getElementById("email").value;
+    const userMessage = document.getElementById("message").value;
+
+    // 1️⃣ Send message to YOU
+    emailjs.send(
+      "service_nmk2x5a",
+      "template_w8bw4nr", // admin template
+      {
+        from_email: userEmail,
+        message: userMessage
+      }
+    )
+    .then(() => {
+
+      // 2️⃣ Auto-reply to USER
+      return emailjs.send(
+        "service_nmk2x5a",
+        "template_nypwzrf", // 👈 replace this
+        {
+          to_email: userEmail,
+          message: userMessage
+        }
+      );
+
+    })
+    .then(() => {
+      document.getElementById("status").innerText =
+        "✅ Message sent! We’ll get back to you shortly.";
+      form.reset();
+    })
+    .catch(err => {
+      document.getElementById("status").innerText =
+        "❌ Failed to send message. Please try again.";
+      console.error("EmailJS error:", err);
+    });
+
+  });
+
+});
+
