@@ -35,9 +35,10 @@
         <!-- Navigation Links -->
         <div class="nav-links d-none d-md-flex">
             <a href="#about">About</a>
-            <a href="#services">Services</a>
+            <a href="#about-bank">Bank</a>
+            <a href="#letter">letter</a>
             <a href="#values">Values</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact-info">Contact</a>
         </div>
 
         <!-- Hamburger for mobile -->
@@ -46,32 +47,6 @@
         </div>
     </div>
 </nav>
-
-
-</style>
-
-<!-- Optional JS for mobile toggle -->
-<script>
-const hamburger = document.querySelector('.hamburger');
-let mobileMenu;
-
-hamburger.addEventListener('click', () => {
-    if(!mobileMenu) {
-        mobileMenu = document.createElement('div');
-        mobileMenu.classList.add('mobile-menu');
-        mobileMenu.innerHTML = `
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#values">Values</a>
-            <a href="#contact">Contact</a>
-        `;
-        document.body.appendChild(mobileMenu);
-    } else {
-        mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
-    }
-});
-</script>
-
 
 <!-- HERO -->
 <header>
@@ -173,7 +148,7 @@ hamburger.addEventListener('click', () => {
         const spinner2 = createSpinnerInline();       
     </script>  
 </div> 
-<section class="about-bank py-5" style="background-color:#f7f9fc;">
+<section class="about-bank py-5" style="background-color:#f7f9fc;" id="about-bank">
     <div class="container">
         <div class="row g-5 align-items-center">
             
@@ -245,7 +220,7 @@ hamburger.addEventListener('click', () => {
 <!-- Service Start -->
 <!-- Kingdom Initiatives Section -->
 <section class="kingdom-initiatives py-5" style="background-color:#f7f9fc;">
-    <div class="container">
+    <div class="container-fluid">
         <!-- Section Heading -->
         <div class="text-center mb-5">
             <h2 class="fw-bold" style="color:#1B5C98;">Kingdom Initiatives</h2>
@@ -400,15 +375,9 @@ hamburger.addEventListener('click', () => {
     </div>
 </section>
 
-<!-- CSS for hover effects and icons -->
-
-
-
-
-
 <!-- VALUES -->
 <section id="values" class="py-5" style="background-color: #f7f9fc;">
-    <div class="container text-center">
+    <div class="container-fluid text-center">
         <h3 class="fw-bold mb-4" style="color:#1B5C98;">Our Values</h3>
         <div class="row g-4 justify-content-center">
 
@@ -454,7 +423,7 @@ hamburger.addEventListener('click', () => {
 
 <!----------letter------->
 <!-- LETTER TO THE BODY OF CHRIST -->
-<section id="letter" class="py-5 bg-light">
+<section class="letter" id="letter" class="py-5 bg-light">
   <div class="container">
     <h2 class="text-center mb-3">Letter to the Body of Christ</h2>
     <p class="text-center fst-italic mb-5 fade-in">“Let us bear one another’s burdens.” — Galatians 6:2</p>
@@ -511,31 +480,6 @@ hamburger.addEventListener('click', () => {
     </div>
   </div>
 </section>
-
-<!-- Fade-in animation CSS (add to your style.css) -->
-
-
-<!-- JavaScript to trigger fade-in on scroll (before </body>) -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const faders = document.querySelectorAll('.fade-in');
-
-    const appearOnScroll = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.2 });
-
-    faders.forEach(fader => {
-        appearOnScroll.observe(fader);
-    });
-});
-</script>
-
-
-
 
 <!--------contact section-->
 <section id="contact-info" class="py-5 bg-light">
@@ -620,17 +564,13 @@ document.addEventListener('DOMContentLoaded', () => {
     &copy; 2025 Lebogang Solutions. All Rights Reserved.
 </footer>
 
-<!-- CSS -->
-
-
-
-
 
 <!-- IMPORTANT: load JS at the bottom 
 <script src="js/slider.js"></script>-->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./js/spinners.js"></script>
+<script src="./js/main.js"></script>
 
 
 </body>
