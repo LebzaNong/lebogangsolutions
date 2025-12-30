@@ -9,9 +9,10 @@ hamburger.addEventListener('click', () => {
         mobileMenu.classList.add('mobile-menu');
         mobileMenu.innerHTML = `
             <a href="#about">About</a>
-            <a href="#services">Services</a>
+            <a href="#about-bank">Bank</a>
+            <a href="#letter">letter</a>
             <a href="#values">Values</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact-info">Contact</a>
         `;
         document.body.appendChild(mobileMenu);
     } else {
